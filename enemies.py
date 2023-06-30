@@ -9,7 +9,7 @@ class Enemy:
 
 
     def attack(self, weapon):
-        attack.attack(weapon, enemy = player)
+        attack.attack(weapon, enemy=player)
 
 
 skeleton = Enemy(15, 10)
