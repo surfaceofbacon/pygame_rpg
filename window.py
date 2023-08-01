@@ -1,7 +1,5 @@
 import pygame   #imports pygame to file
 
-
-
 pygame.init()  #initilizes pygame so the window can run
 
 size = 1280, 720   #defines the size of the window
