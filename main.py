@@ -3,27 +3,37 @@ import pygame
 import weapons
 import enemies
 import attack
-import menu
-import Draw_text
-
-
+import play_Screen
+import start_menu
+import settings_menu
 def main():    # the main function that draws the window and allows for functionality
-
+    start = True
+    play = False
+    settings = False
     running = True
     while running:
-        window.window.fill(menu.color)
 
-        Draw_text.draw_text('Play', menu.font, menu.text_col, menu.x, 200)
-        Draw_text.draw_text('Settings', menu.font, menu.text_col, menu.x, 280)
-        Draw_text.draw_text('Quit', menu.font, menu.text_col, menu.x, 360)
+        if start:
+            start_menu.start_menu()
 
         pygame.display.update()
 
         window.clock.tick(window.FPS)
-
+        if play:
+            play_Screen.Draw_Play_Screen()
+        if settings:
+            settings_menu.Draw_Settings_Menu()
         for event in pygame.event.get():
-            if event.type == pygame.KEYDOWN:
-                if event.key =
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                pos = pygame.mouse.get_pos()
+                if start_menu.play_rect.collidepoint(pos):
+                    play = True
+                    start = False
+                elif start_menu.settings_rect.collidepoint(pos):
+                    settings = True
+                    start = False
+                elif start_menu.Quit_rect.collidepoint(pos):
+                    running = False
             if event.type == pygame.QUIT:  # closes the window when the x is pressed
                 running = False
 
