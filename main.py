@@ -6,6 +6,8 @@ import attack
 import play_Screen
 import start_menu
 import settings_menu
+
+
 def main():    # the main function that draws the window and allows for functionality
     start = True
     play = False
@@ -44,9 +46,5 @@ def main():    # the main function that draws the window and allows for function
                 running = False
 
 
-    attack.attack(weapon=weapons.iron_sword, enemy=enemies.skeleton)
-    print(enemies.skeleton.health)
-
-
-if __name__ == '__main__':  # runs the main function
+if __name__ == '__main__':     # runs the main function
     main()
