@@ -1,11 +1,4 @@
-import window
-import pygame
-import weapons
-import enemies
-import attack
-import play_Screen
-import start_menu
-import settings_menu
+import window, pygame, play_loop, play_Screen, start_menu, settings_menu
 
 
 def main():    # the main function that draws the window and allows for functionality
