@@ -6,24 +6,21 @@ def main():    # the main function that draws the window and allows for function
     play = False
     settings = False
     running = True
+    cube_x = 700
+    cube_y = 400
     while running:
-
         if start:
             start_menu.start_menu()
-
         pygame.display.update()
-
         window.clock.tick(window.FPS)
         if play:
             play_Screen.Draw_Play_Screen()
+            play_loop.cube(cube_x, cube_y)
         if settings:
             settings_menu.Draw_Settings_Menu()
         for event in pygame.event.get():
             if event.type == pygame.MOUSEBUTTONDOWN:
                 pos = pygame.mouse.get_pos()
-                if play and play_Screen.back_rect.collidepoint(pos):
-                    play = False
-                    start = True
                 if settings and settings_menu.back_rect.collidepoint(pos):
                     settings = False
                     start = True
@@ -35,6 +32,15 @@ def main():    # the main function that draws the window and allows for function
                     start = False
                 elif start_menu.Quit_rect.collidepoint(pos) and start:
                     running = False
+            if event.type == pygame.KEYDOWN:
+                if play and event.key == pygame.K_w:
+                    cube_y -= 50
+                if play and event.key == pygame.K_s:
+                    cube_y += 50
+                if play and event.key == pygame.K_a:
+                    cube_x -= 50
+                if play and event.key == pygame.K_d:
+                    cube_x += 50
             if event.type == pygame.QUIT:  # closes the window when the x is pressed
                 running = False
 
