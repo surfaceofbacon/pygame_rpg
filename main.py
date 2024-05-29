@@ -1,4 +1,4 @@
-import window, pygame, play_loop, play_Screen, start_menu, settings_menu
+import window, pygame, play_Screen, start_menu, settings_menu, player
 
 
 def main():    # the main function that draws the window and allows for functionality
@@ -8,6 +8,7 @@ def main():    # the main function that draws the window and allows for function
     running = True
     cube_x = 700
     cube_y = 400
+    hero = player.player(10)
     while running:
         if start:
             start_menu.start_menu()
@@ -15,7 +16,7 @@ def main():    # the main function that draws the window and allows for function
         window.clock.tick(window.FPS)
         if play:
             play_Screen.Draw_Play_Screen()
-            play_loop.cube(cube_x, cube_y)
+            hero.cube(cube_x, cube_y)
         if settings:
             settings_menu.Draw_Settings_Menu()
         for event in pygame.event.get():
@@ -32,17 +33,19 @@ def main():    # the main function that draws the window and allows for function
                     start = False
                 elif start_menu.Quit_rect.collidepoint(pos) and start:
                     running = False
-            if event.type == pygame.KEYDOWN:
-                if play and event.key == pygame.K_w:
-                    cube_y -= 50
-                if play and event.key == pygame.K_s:
-                    cube_y += 50
-                if play and event.key == pygame.K_a:
-                    cube_x -= 50
-                if play and event.key == pygame.K_d:
-                    cube_x += 50
             if event.type == pygame.QUIT:  # closes the window when the x is pressed
                 running = False
+        keys = pygame.key.get_pressed()
+
+        if keys[pygame.K_w]:
+            cube_y -= player.speed
+        if keys[pygame.K_s]:
+            cube_y += player.speed
+        if keys[pygame.K_a]:
+            cube_x -= player.speed
+        if keys[pygame.K_d]:
+            cube_x += player.speed
+
 
 
 if __name__ == '__main__':     # runs the main function
