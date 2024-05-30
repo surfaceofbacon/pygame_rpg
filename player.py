@@ -1,6 +1,7 @@
 import attack
 import pygame
-import window # imports attack to the player can attack
+import window # imports attack to the player can attack\
+import main
 speed = 5
 class player:
 

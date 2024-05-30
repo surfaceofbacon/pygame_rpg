@@ -36,7 +36,6 @@ def main():    # the main function that draws the window and allows for function
             if event.type == pygame.QUIT:  # closes the window when the x is pressed
                 running = False
         keys = pygame.key.get_pressed()
-
         if keys[pygame.K_w]:
             cube_y -= player.speed
         if keys[pygame.K_s]:
