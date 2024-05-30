@@ -8,7 +8,9 @@ def main():    # the main function that draws the window and allows for function
     running = True
     cube_x = 700
     cube_y = 400
-    hero = player.player(10)
+    cube_width = 100
+    cube_height = 100
+    hero = player.player(10, cube_width, cube_height)
     while running:
         if start:
             start_menu.start_menu()
@@ -36,6 +38,14 @@ def main():    # the main function that draws the window and allows for function
             if event.type == pygame.QUIT:  # closes the window when the x is pressed
                 running = False
         keys = pygame.key.get_pressed()
+        if cube_x > window.size[0] - cube_width:
+            cube_x = 0
+        if cube_x < 0:
+            cube_x = window.size[0] - cube_width
+        if cube_y > window.size[1] - cube_height:
+            cube_y = 0
+        if cube_y < 0:
+            cube_y = window.size[1] - cube_height
         if keys[pygame.K_w]:
             cube_y -= player.speed
         if keys[pygame.K_s]:
