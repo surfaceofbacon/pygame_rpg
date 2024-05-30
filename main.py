@@ -2,6 +2,7 @@ import window, pygame, play_Screen, start_menu, settings_menu, player
 
 
 def main():    # the main function that draws the window and allows for functionality
+    number = 0
     start = True
     play = False
     settings = False
@@ -17,7 +18,7 @@ def main():    # the main function that draws the window and allows for function
         pygame.display.update()
         window.clock.tick(window.FPS)
         if play:
-            play_Screen.Draw_Play_Screen()
+            play_Screen.Draw_Play_Screen(number)
             hero.cube(cube_x, cube_y)
         if settings:
             settings_menu.Draw_Settings_Menu()
@@ -40,12 +41,18 @@ def main():    # the main function that draws the window and allows for function
         keys = pygame.key.get_pressed()
         if cube_x > window.size[0] - cube_width:
             cube_x = 0
+            if number == 8:
+                cube_x = window.size[0] - cube_width
+            number += 1
         if cube_x < 0:
             cube_x = window.size[0] - cube_width
+            if number == 0:
+                cube_x = 0
+            number -= 1
         if cube_y > window.size[1] - cube_height:
-            cube_y = 0
-        if cube_y < 0:
             cube_y = window.size[1] - cube_height
+        if cube_y < 0:
+            cube_y = 0
         if keys[pygame.K_w]:
             cube_y -= player.speed
         if keys[pygame.K_s]:
@@ -54,6 +61,12 @@ def main():    # the main function that draws the window and allows for function
             cube_x -= player.speed
         if keys[pygame.K_d]:
             cube_x += player.speed
+        if number > 8:
+            number = 8
+        elif number < 0:
+            number = 0
+
+
 
 
 
