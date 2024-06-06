@@ -1,7 +1,5 @@
-import Draw_text
 import window
 import pygame
-import menu
 import random
 black = (0,0,0)
 white = (255,255,255)

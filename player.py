@@ -1,7 +1,6 @@
 import attack
 import pygame
 import window # imports attack to the player can attack\
-import main
 speed = 15
 cube_x = 700
 cube_y = 400
