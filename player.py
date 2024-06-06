@@ -2,7 +2,11 @@ import attack
 import pygame
 import window # imports attack to the player can attack\
 import main
-speed = 5
+speed = 15
+cube_x = 700
+cube_y = 400
+cube_width = 100
+cube_height = 100
 class player:
 
     def __init__(self, speed, height, width, armor=0, weapon=0):    # innit method applies armor and a weapon to a player

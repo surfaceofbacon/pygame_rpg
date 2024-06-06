@@ -14,6 +14,7 @@ magenta = (255, 0, 255)
 gray = (128, 128, 128)
 background = pygame.image.load('testmap.png')
 levels = [black, white, red, green, blue, yellow, cyan, magenta, gray]
+number = 0
 random.shuffle(levels)
 
 def Draw_Play_Screen(number):
