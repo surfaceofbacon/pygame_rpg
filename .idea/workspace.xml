@@ -4,26 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03b1d67c-7b48-4eb7-b29f-4369a6bca12c" name="Changes" comment="made program way more organized">
+    <list default="true" id="03b1d67c-7b48-4eb7-b29f-4369a6bca12c" name="Changes" comment="sorted into directories">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Draw_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/Draw_text.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/armor.py" beforeDir="false" afterPath="$PROJECT_DIR$/player/armor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attack.py" beforeDir="false" afterPath="$PROJECT_DIR$/player/attack.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boolean.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/boolean.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/button.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemies.py" beforeDir="false" afterPath="$PROJECT_DIR$/player/enemies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu_nav.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/menu_nav.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movement.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/movement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pause.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/pause.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/play_Screen.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/play_Screen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/player/player.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/settings_menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/start_menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weapons.py" beforeDir="false" afterPath="$PROJECT_DIR$/player/weapons.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/window.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/window.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/window_refresh.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/window_refresh.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/movement.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/movement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/window_refresh.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/window_refresh.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,9 +41,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rcind\OneDrive\Documents\GitHub\textbasedrpg\menu" />
       <recent name="C:\Users\rcind\OneDrive\Documents\GitHub\textbasedrpg\main" />
       <recent name="C:\Users\rcind\OneDrive\Documents\GitHub\textbasedrpg\player" />
-      <recent name="C:\Users\rcind\OneDrive\Documents\GitHub\textbasedrpg\menu" />
       <recent name="C:\Users\rcind\OneDrive\Documents\GitHub\textbasedrpg" />
     </key>
   </component>
@@ -249,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717717425832</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="sorted into directories">
+      <created>1717719673845</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1717719673845</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -272,6 +263,7 @@
     <MESSAGE value="added random map &quot;roguelike&quot; functionality" />
     <MESSAGE value="made boolean.py for boolean values" />
     <MESSAGE value="made program way more organized" />
-    <option name="LAST_COMMIT_MESSAGE" value="made program way more organized" />
+    <MESSAGE value="sorted into directories" />
+    <option name="LAST_COMMIT_MESSAGE" value="sorted into directories" />
   </component>
 </project>

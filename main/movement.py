@@ -4,9 +4,7 @@ from player import player
 from menu import play_Screen, window
 
 
-def move_cube(x, y):
-
-    keys = pygame.key.get_pressed()
+def move_cube(x, y, keys):
     if x > window.size[0] - player.cube_width:
         player.cube_x = 0
         if play_Screen.number == 8:
