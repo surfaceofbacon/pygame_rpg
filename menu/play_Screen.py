@@ -1,4 +1,4 @@
-import window
+from . import window
 import pygame
 import random
 black = (0,0,0)
@@ -10,7 +10,7 @@ yellow = (255, 255, 0)
 cyan = (0, 255, 255)
 magenta = (255, 0, 255)
 gray = (128, 128, 128)
-background = pygame.image.load('testmap.png')
+#background = pygame.image.load('../testmap.png')
 levels = [black, white, red, green, blue, yellow, cyan, magenta, gray]
 number = 0
 random.shuffle(levels)

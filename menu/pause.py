@@ -1,7 +1,7 @@
-import window
-import menu
+from . import window
+from . import menu
 import pygame
-import Draw_text
+from . import Draw_text
 resume_rect = pygame.Rect(menu.x, 200, 175, 50)
 settings_rect = pygame.Rect(menu.x, 280, 200, 50)
 Quit_rect = pygame.Rect(menu.x, 360, 90, 50)

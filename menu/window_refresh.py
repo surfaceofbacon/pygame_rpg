@@ -1,4 +1,7 @@
-import pygame, boolean, start_menu, settings_menu, pause, play_Screen, movement, player, window
+import pygame, movement
+from player import player
+from menu import pause, play_Screen, start_menu, settings_menu, window
+from main import boolean
 
 
 def refresh(hero):

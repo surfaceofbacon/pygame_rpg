@@ -1,4 +1,7 @@
-import window, player, play_Screen, pygame, boolean
+import pygame
+import boolean
+from player import player
+from menu import play_Screen, window
 
 
 def move_cube(x, y):

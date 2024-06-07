@@ -1,4 +1,7 @@
-import pygame, player, boolean, window_refresh, menu_nav
+import pygame
+import boolean
+from menu import menu_nav, window_refresh
+from player import player
 
 def main():    # the main function that draws the window and allows for functionality
     hero = player.player(10, player.cube_width, player.cube_height)

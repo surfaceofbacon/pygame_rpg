@@ -1,4 +1,6 @@
-import pygame, boolean, settings_menu, start_menu, pause
+import pygame
+from . import settings_menu, start_menu, pause
+from main import boolean
 
 
 def menu_nav(events):

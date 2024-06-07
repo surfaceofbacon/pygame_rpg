@@ -1,8 +1,8 @@
 import pygame
 
-import window
-import Draw_text
-import menu
+from . import window
+from . import Draw_text
+from . import menu
 
 play_rect = pygame.Rect(menu.x, 200, 90, 50)
 settings_rect = pygame.Rect(menu.x, 280, 200, 50)

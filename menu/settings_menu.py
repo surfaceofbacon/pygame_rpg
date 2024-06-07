@@ -1,5 +1,5 @@
-import Draw_text
-import window
+from . import Draw_text
+from . import window
 import pygame
 
 
