@@ -1,4 +1,4 @@
-from menu import window
+import window
 
 
 def draw_text(text, font, text_col, x, y):
