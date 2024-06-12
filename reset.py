@@ -1,6 +1,6 @@
 import settings_menu
-import window
+import colors
 def reset():
-    settings_menu.blue_color = window.blue
-    settings_menu.red_color = window.red
-    settings_menu.green_color = window.green
+    settings_menu.blue_color = colors.blue
+    settings_menu.red_color = colors.red
+    settings_menu.green_color = colors.green

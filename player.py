@@ -1,13 +1,13 @@
 import attack
 import pygame
 import window
-import play_Screen
+import colors
 speed = 15
 cube_x = 700
 cube_y = 400
 cube_width = 100
 cube_height = 100
-player_color = play_Screen.green
+player_color = colors.green
 
 class player:
 

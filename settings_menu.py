@@ -1,16 +1,16 @@
 import Draw_text
 import window
 import pygame
-
+import colors
 
 font = pygame.font.SysFont('Arialblack', 40)
 back_rect = pygame.Rect(480, 380, 90, 50)
 blue_rect = pygame.Rect(400, 280, 90, 50)
 red_rect = pygame.Rect(600, 280, 80, 50)
 green_rect = pygame.Rect(800, 280, 130, 50)
-blue_color = window.blue
-red_color = window.red
-green_color = window.green
+blue_color = colors.blue
+red_color = colors.red
+green_color = colors.green
 settings_color = (255, 70, 200)
 back_color = (255, 70, 200)
 def Draw_Settings_Menu():
