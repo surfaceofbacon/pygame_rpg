@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03b1d67c-7b48-4eb7-b29f-4369a6bca12c" name="Changes" comment="added change color functionality">
-      <change afterPath="$PROJECT_DIR$/reset.py" afterDir="false" />
+    <list default="true" id="03b1d67c-7b48-4eb7-b29f-4369a6bca12c" name="Changes" comment="added button feedback for changing colors">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu_nav.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu_nav.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings_menu.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717877435822</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="added button feedback for changing colors">
+      <created>1717963321895</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1717963321895</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -286,6 +289,7 @@
     <MESSAGE value="sorted into directories" />
     <MESSAGE value="moved keys, so I can use it in other functions later" />
     <MESSAGE value="added change color functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="added change color functionality" />
+    <MESSAGE value="added button feedback for changing colors" />
+    <option name="LAST_COMMIT_MESSAGE" value="added button feedback for changing colors" />
   </component>
 </project>
