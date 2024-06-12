@@ -8,7 +8,6 @@ import colors
 
 
 def menu_nav(events):
-    time = pygame.time.get_ticks()
     if events.type == pygame.MOUSEBUTTONDOWN:
         pos = pygame.mouse.get_pos()
         if boolean.settings and settings_menu.back_rect.collidepoint(pos):
