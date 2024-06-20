@@ -1,6 +1,8 @@
 import window
 import random
 import colors
+import pygame
+import draw_shape
 #background = pygame.image.load('../testmap.png')
 levels = [colors.black, colors.white, colors.red, colors.green, colors.blue, colors.yellow, colors.cyan, colors.magenta, colors.gray]
 number = 0
