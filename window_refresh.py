@@ -1,4 +1,5 @@
 import pygame
+import actions
 import movement
 import player
 import window
@@ -19,9 +20,10 @@ def refresh(hero):
         player_position = (player.cube_x, player.cube_y)
         play_Screen.Draw_Play_Screen(play_Screen.number)
         movement.move_cube(player.cube_x, player.cube_y, keys)
-        movement.move_triangle(player_position)
         hero.cube(player.cube_x, player.cube_y, player.player_color)
-        enemies.triangle_enemy.draw(10)
+        if enemies.triangle_enemy.alive:
+            enemies.triangle_enemy.draw(10)
+            movement.move_triangle(player_position)
     if boolean.settings:
         settings_menu.Draw_Settings_Menu()
     if boolean.bool_pause:

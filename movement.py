@@ -1,9 +1,12 @@
 import pygame
+
+import attack
 import boolean
 import player
 import window
 import play_Screen
 import enemies
+import weapons
 
 def move_cube(x, y, keys):
     if x > window.size[0] - player.cube_width:
@@ -35,4 +38,4 @@ def move_cube(x, y, keys):
         boolean.play = False
         boolean.bool_pause = True
 def move_triangle(player_postion):
-    enemies.triangle_enemy.move(player_postion, enemies.triangle_position)
+    enemies.triangle_enemy.move(player_postion, enemies.triangle_enemy.position)

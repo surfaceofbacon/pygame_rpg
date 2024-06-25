@@ -1,10 +1,10 @@
-import random    # imports the random module as this funcion requires a lot of random integers
+import dice
 
 
 def attack(weapon, enemy):        # defines the function for attacking
     range_cap = 100 // weapon.crit_chance    # so we can calculate the chance of getting a crit hit with critCalc
-    hitDie = random.randint(1, 21)       # hits are random chance with d20s
-    critCalc = random.randint(1, range_cap+1)    # calculates if there is a crit hit or not
+    hitDie = dice.roll_dice(20, weapon.modifier)      # hits are random chance with d20s
+    critCalc = dice.roll_dice(range_cap, 0)    # calculates if there is a crit hit or not
 
     if critCalc == 1:   # if critCalc is one then it's a crit
         crit = True
@@ -20,3 +20,6 @@ def attack(weapon, enemy):        # defines the function for attacking
         print('enemy has been hit')
     else:   # misses the shot
         print('you missed')
+    if enemy.health <= 0:
+        enemy.kill()
+
