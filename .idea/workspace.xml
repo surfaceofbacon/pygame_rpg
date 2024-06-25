@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03b1d67c-7b48-4eb7-b29f-4369a6bca12c" name="Changes" comment="deleted a time variable that was not being used">
-      <change afterPath="$PROJECT_DIR$/draw_shape.py" afterDir="false" />
+    <list default="true" id="03b1d67c-7b48-4eb7-b29f-4369a6bca12c" name="Changes" comment="made a triangle enemy that follows me">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemies.py" beforeDir="false" afterPath="$PROJECT_DIR$/enemies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movement.py" beforeDir="false" afterPath="$PROJECT_DIR$/movement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/play_Screen.py" beforeDir="false" afterPath="$PROJECT_DIR$/play_Screen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/window_refresh.py" beforeDir="false" afterPath="$PROJECT_DIR$/window_refresh.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718230570547</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="made a triangle enemy that follows me">
+      <created>1718917194052</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1718917194052</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,6 +253,7 @@
     <MESSAGE value="made multiple &quot;levels&quot; and borders" />
     <MESSAGE value="added colors module to organize colors" />
     <MESSAGE value="deleted a time variable that was not being used" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted a time variable that was not being used" />
+    <MESSAGE value="made a triangle enemy that follows me" />
+    <option name="LAST_COMMIT_MESSAGE" value="made a triangle enemy that follows me" />
   </component>
 </project>

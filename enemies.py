@@ -17,6 +17,8 @@ class Enemy:   # class of an enemy
     def attack(self, weapon):           # attack method gives enemies the ability to attack
         pass
 
+
+class Triangle(Enemy):
     def move(self, current_player_position: tuple, current_enemy_postion: tuple):
         x_distance = (current_enemy_postion[0] - current_player_position[0])
         y_distance = (current_enemy_postion[1] - current_player_position[1])
@@ -25,9 +27,10 @@ class Enemy:   # class of an enemy
             angle += math.pi
         triangle_position[0] += self.speed * math.cos(angle)
         triangle_position[1] += self.speed * math.sin(angle)
+
     def draw(self, size):
         draw_shape.draw_triangle(colors.red, triangle_position, size)
 
-triangle_enemy = Enemy(10, 10, 2, triangle_position)
+triangle_enemy = Triangle(10, 10, 2, triangle_position)
 
 
