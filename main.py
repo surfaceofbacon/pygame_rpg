@@ -17,7 +17,7 @@ def main():    # the main function that draws the window and allows for function
         for event in pygame.event.get():
             menu_nav.menu_nav(event)
             if boolean.play:
-                actions.check_actions(event, (player.cube_x, player.cube_y), (enemies.triangle_enemy.position))
+                actions.check_actions(event, (player.cube_x, player.cube_y))
 
         
 

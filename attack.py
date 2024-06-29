@@ -1,4 +1,5 @@
 import dice
+import enemies
 
 
 def attack(weapon, enemy):        # defines the function for attacking
@@ -21,5 +22,5 @@ def attack(weapon, enemy):        # defines the function for attacking
     else:   # misses the shot
         print('you missed')
     if enemy.health <= 0:
-        enemy.kill()
+        enemies.enemies_list.remove(enemy)
 

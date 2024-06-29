@@ -21,9 +21,10 @@ def refresh(hero):
         play_Screen.Draw_Play_Screen(play_Screen.number)
         movement.move_cube(player.cube_x, player.cube_y, keys)
         hero.cube(player.cube_x, player.cube_y, player.player_color)
-        if enemies.triangle_enemy.alive:
-            enemies.triangle_enemy.draw(10)
-            movement.move_triangle(player_position)
+        for enemy in enemies.enemies_list:
+            enemy.draw(10)
+            movement.move(player_position, enemy)
+
     if boolean.settings:
         settings_menu.Draw_Settings_Menu()
     if boolean.bool_pause:

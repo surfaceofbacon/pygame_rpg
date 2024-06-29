@@ -15,6 +15,7 @@ def move_cube(x, y, keys):
             player.cube_x = window.size[0] - player.cube_width
         else:
             play_Screen.number += 1
+            boolean.generated = False
     if x < 0:
         player.cube_x = window.size[0] - player.cube_width
 
@@ -22,6 +23,7 @@ def move_cube(x, y, keys):
             player.cube_x = 0
         else:
             play_Screen.number -= 1
+            boolean.generated = False
     if y > window.size[1] - player.cube_height:
         player.cube_y = window.size[1] - player.cube_height
     if y < 0:
@@ -37,5 +39,5 @@ def move_cube(x, y, keys):
     if keys[pygame.K_ESCAPE]:
         boolean.play = False
         boolean.bool_pause = True
-def move_triangle(player_postion):
-    enemies.triangle_enemy.move(player_postion, enemies.triangle_enemy.position)
+def move(player_postion, enemy):
+    enemy.move(player_postion, enemy.position)

@@ -4,7 +4,7 @@ import math
 import colors
 import draw_shape
 
-
+enemies_list = []
 class Enemy:   # class of an enemy
 
     def __init__(self, AC, health, speed, position: list):     # innit method gives the instance of an enemy armor class and health
@@ -20,9 +20,9 @@ class Enemy:   # class of an enemy
     def kill(self):
         self.alive = False
 
-    def move(self, current_player_position: tuple, current_enemy_postion: tuple):
-        x_distance = (current_enemy_postion[0] - current_player_position[0])
-        y_distance = (current_enemy_postion[1] - current_player_position[1])
+    def move(self, current_player_position: tuple, current_enemy_position: tuple):
+        x_distance = (current_enemy_position[0] - current_player_position[0])
+        y_distance = (current_enemy_position[1] - current_player_position[1])
         angle = math.atan(y_distance/x_distance)
         if x_distance > 0:
             angle += math.pi
@@ -35,4 +35,4 @@ class Triangle(Enemy):
         draw_shape.draw_triangle(colors.red, self.position, size)
 
 
-triangle_enemy = Triangle(10, 10, 1, [100, 100])
+
