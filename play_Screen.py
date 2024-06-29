@@ -7,11 +7,13 @@ levels = [colors.black, colors.white, colors.red, colors.green, colors.blue, col
 number = 0
 random.shuffle(levels)
 
+
 def Draw_Play_Screen(number):
     window.window.fill(levels[number])
     if not boolean.generated:
         enemies.enemies_list.clear()
         generate_level(number)
+
 
 def generate_level(number):
     if levels[number] == colors.black:
