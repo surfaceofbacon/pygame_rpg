@@ -11,3 +11,8 @@ def check_actions(event, player_position: tuple):
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_SPACE and distance < weapons.iron_sword.range:
                 attack.attack(weapons.iron_sword, enemy)
+
+        if distance <= enemy.range:
+            enemy.attack()
+
+

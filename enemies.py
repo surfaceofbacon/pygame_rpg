@@ -3,19 +3,24 @@ import math
 
 import colors
 import draw_shape
+import player
 
 enemies_list = []
 class Enemy:   # class of an enemy
 
-    def __init__(self, AC, health, speed, position: list):     # innit method gives the instance of an enemy armor class and health
+    def __init__(self, AC, health, speed, weapon_damage, range, position: list):     # innit method gives the instance of an enemy armor class and health
         self.AC = AC
         self.health = health
         self.speed = speed
+        self.damage = weapon_damage
+        self.range = range
         self.position = position
         self.alive = True
 
-    def attack(self, weapon):           # attack method gives enemies the ability to attack
-        pass
+
+    def attack(self):           # attack method gives enemies the ability to attack
+        player.hero.take_damage(self.damage)
+        print(player.hero.health)
 
     def kill(self):
         self.alive = False

@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03b1d67c-7b48-4eb7-b29f-4369a6bca12c" name="Changes" comment="made semi working combat system">
+    <list default="true" id="03b1d67c-7b48-4eb7-b29f-4369a6bca12c" name="Changes" comment="optimized the combat system. allowed for easy adding of enemies and level design">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/actions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attack.py" beforeDir="false" afterPath="$PROJECT_DIR$/attack.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boolean.py" beforeDir="false" afterPath="$PROJECT_DIR$/boolean.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/enemies.py" beforeDir="false" afterPath="$PROJECT_DIR$/enemies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movement.py" beforeDir="false" afterPath="$PROJECT_DIR$/movement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu_nav.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu_nav.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/play_Screen.py" beforeDir="false" afterPath="$PROJECT_DIR$/play_Screen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reset.py" beforeDir="false" afterPath="$PROJECT_DIR$/reset.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/window_refresh.py" beforeDir="false" afterPath="$PROJECT_DIR$/window_refresh.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -252,7 +252,21 @@
       <option name="project" value="LOCAL" />
       <updated>1719341663211</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="optimized the combat system. allowed for easy adding of enemies and level design">
+      <created>1719625300337</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1719625300337</updated>
+    </task>
+    <task id="LOCAL-00027" summary="optimized the combat system. allowed for easy adding of enemies and level design">
+      <created>1719645649422</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1719645649422</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -278,6 +292,7 @@
     <MESSAGE value="made a triangle enemy that follows me" />
     <MESSAGE value="made enemy and triangle classes seperate using inheritance" />
     <MESSAGE value="made semi working combat system" />
-    <option name="LAST_COMMIT_MESSAGE" value="made semi working combat system" />
+    <MESSAGE value="optimized the combat system. allowed for easy adding of enemies and level design" />
+    <option name="LAST_COMMIT_MESSAGE" value="optimized the combat system. allowed for easy adding of enemies and level design" />
   </component>
 </project>

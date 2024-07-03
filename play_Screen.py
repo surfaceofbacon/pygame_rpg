@@ -17,8 +17,8 @@ def Draw_Play_Screen(number):
 
 def generate_level(number):
     if levels[number] == colors.black:
-        triangle_enemy1 = enemies.Triangle(10, 10, 1, [100, 100])
-        triangle_enemy2 = enemies.Triangle(10, 10, 1, [500, 500])
+        triangle_enemy1 = enemies.Triangle(10, 10, 1, 5, 150, [100, 100])
+        triangle_enemy2 = enemies.Triangle(10, 10, 1, 5, 150, [500, 500])
         enemies.enemies_list.append(triangle_enemy1)
         enemies.enemies_list.append(triangle_enemy2)
     boolean.generated = True

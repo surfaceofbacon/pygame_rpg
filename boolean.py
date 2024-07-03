@@ -4,3 +4,4 @@ start = True
 settings = False
 running = True
 generated = False
+dead = False

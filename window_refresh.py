@@ -2,6 +2,7 @@ import pygame
 import actions
 import movement
 import player
+import reset
 import window
 import start_menu
 import settings_menu
@@ -24,7 +25,8 @@ def refresh(hero):
         for enemy in enemies.enemies_list:
             enemy.draw(10)
             movement.move(player_position, enemy)
-
+        if player.hero.health <= 0:
+            reset.game_reset()
     if boolean.settings:
         settings_menu.Draw_Settings_Menu()
     if boolean.bool_pause:

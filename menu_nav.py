@@ -1,4 +1,6 @@
 import pygame
+
+import reset
 import start_menu
 import settings_menu
 import pause
@@ -19,6 +21,7 @@ def menu_nav(events):
         elif start_menu.play_rect.collidepoint(pos) and boolean.start:
             boolean.play = True
             boolean.start = False
+            print('play')
         elif start_menu.settings_rect.collidepoint(pos) and boolean.start:
             boolean.settings = True
             boolean.start = False
@@ -43,3 +46,5 @@ def menu_nav(events):
             settings_menu.green_color = colors.black
     if events.type == pygame.QUIT:  # closes the window when the x is pressed
         boolean.running = False
+    if boolean.dead:
+        reset.game_reset()
