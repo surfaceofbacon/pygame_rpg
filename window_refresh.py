@@ -21,11 +21,13 @@ def refresh(hero):
         player_position = (player.cube_x, player.cube_y)
         play_Screen.Draw_Play_Screen(play_Screen.number)
         movement.move_cube(player.cube_x, player.cube_y, keys)
-        hero.cube(player.cube_x, player.cube_y, player.player_color)
+        hero.cube(player.cube_x, player.cube_y)
+        hero.check_color()
         for enemy in enemies.enemies_list:
             enemy.draw(10)
+            enemy.check_color()
             movement.move(player_position, enemy)
-        if player.hero.health <= 0:
+        if hero.health <= 0:
             reset.game_reset()
     if boolean.settings:
         settings_menu.Draw_Settings_Menu()

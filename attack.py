@@ -1,6 +1,6 @@
 import dice
 import enemies
-
+import colors
 
 def attack(weapon, enemy):        # defines the function for attacking
     range_cap = 100 // weapon.crit_chance    # so we can calculate the chance of getting a crit hit with critCalc
@@ -16,9 +16,11 @@ def attack(weapon, enemy):        # defines the function for attacking
     if hitDie + weapon.modifier > enemy.AC and crit:  # assigns damage to enemy with critical damage
         enemy.health -= (weapon.damage * 2)
         print('enemy has been hit')
+        enemy.color = colors.white
     elif hitDie + weapon.modifier > enemy.AC:     # assigns damage to enemy
         enemy.health -= weapon.damage
         print('enemy has been hit')
+        enemy.color = colors.black
     else:   # misses the shot
         print('you missed')
     if enemy.health <= 0:

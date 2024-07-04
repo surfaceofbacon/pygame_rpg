@@ -1,5 +1,6 @@
 import enemies
 
+
 def check(enemy):
     if enemy.tick_speed <= 0:
         enemy.attack()

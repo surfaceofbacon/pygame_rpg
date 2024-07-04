@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03b1d67c-7b48-4eb7-b29f-4369a6bca12c" name="Changes" comment="made a death system">
-      <change afterPath="$PROJECT_DIR$/check_ticks.py" afterDir="false" />
+    <list default="true" id="03b1d67c-7b48-4eb7-b29f-4369a6bca12c" name="Changes" comment="enemies have tick speed for attacking">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/actions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attack.py" beforeDir="false" afterPath="$PROJECT_DIR$/attack.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check_ticks.py" beforeDir="false" afterPath="$PROJECT_DIR$/check_ticks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/enemies.py" beforeDir="false" afterPath="$PROJECT_DIR$/enemies.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/play_Screen.py" beforeDir="false" afterPath="$PROJECT_DIR$/play_Screen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reset.py" beforeDir="false" afterPath="$PROJECT_DIR$/reset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/window_refresh.py" beforeDir="false" afterPath="$PROJECT_DIR$/window_refresh.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1719970771456</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="enemies have tick speed for attacking">
+      <created>1720120662558</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1720120662558</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -297,6 +307,7 @@
     <MESSAGE value="made semi working combat system" />
     <MESSAGE value="optimized the combat system. allowed for easy adding of enemies and level design" />
     <MESSAGE value="made a death system" />
-    <option name="LAST_COMMIT_MESSAGE" value="made a death system" />
+    <MESSAGE value="enemies have tick speed for attacking" />
+    <option name="LAST_COMMIT_MESSAGE" value="enemies have tick speed for attacking" />
   </component>
 </project>

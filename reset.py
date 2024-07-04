@@ -12,7 +12,6 @@ def reset():
     settings_menu.red_color = colors.red
     settings_menu.green_color = colors.green
 
-
 def game_reset():
     boolean.play = False
     boolean.bool_pause = False
@@ -30,3 +29,4 @@ def game_reset():
     player.cube_width = 100
     player.cube_height = 100
     player.hero.health = 10
+
