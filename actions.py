@@ -3,7 +3,7 @@ import math
 import attack
 import enemies
 import weapons
-
+import check_ticks
 
 def check_actions(event, player_position: tuple):
     for enemy in enemies.enemies_list:
@@ -13,6 +13,6 @@ def check_actions(event, player_position: tuple):
                 attack.attack(weapons.iron_sword, enemy)
 
         if distance <= enemy.range:
-            enemy.attack()
+            check_ticks.check(enemy)
 
 

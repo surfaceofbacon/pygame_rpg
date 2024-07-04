@@ -4,16 +4,17 @@ import math
 import colors
 import draw_shape
 import player
-
+triangle_tick_speed = 20
 enemies_list = []
 class Enemy:   # class of an enemy
 
-    def __init__(self, AC, health, speed, weapon_damage, range, position: list):     # innit method gives the instance of an enemy armor class and health
+    def __init__(self, AC, health, speed, weapon_damage, range, tick_speed, position: list):     # innit method gives the instance of an enemy armor class and health
         self.AC = AC
         self.health = health
         self.speed = speed
         self.damage = weapon_damage
         self.range = range
+        self.tick_speed = tick_speed
         self.position = position
         self.alive = True
 
