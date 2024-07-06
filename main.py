@@ -8,7 +8,7 @@ import window_refresh
 import menu_nav
 import player
 import reset
-import time
+
 
 def main():    # the main function that draws the window and allows for functionality
     while boolean.running:
@@ -17,7 +17,10 @@ def main():    # the main function that draws the window and allows for function
         for event in pygame.event.get():
             menu_nav.menu_nav(event)
             if boolean.play:
-                actions.check_actions(event, (player.cube_x, player.cube_y))
+                actions.check_actions_hero(event, (player.cube_x, player.cube_y))
+        actions.check_actions_enemies((player.cube_x, player.cube_y))
+
+
 
         
 

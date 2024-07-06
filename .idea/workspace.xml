@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03b1d67c-7b48-4eb7-b29f-4369a6bca12c" name="Changes" comment="enemies have tick speed for attacking">
+    <list default="true" id="03b1d67c-7b48-4eb7-b29f-4369a6bca12c" name="Changes" comment="made multiple &quot;levels&quot; and borders">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attack.py" beforeDir="false" afterPath="$PROJECT_DIR$/attack.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/check_ticks.py" beforeDir="false" afterPath="$PROJECT_DIR$/check_ticks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/enemies.py" beforeDir="false" afterPath="$PROJECT_DIR$/enemies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/play_Screen.py" beforeDir="false" afterPath="$PROJECT_DIR$/play_Screen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reset.py" beforeDir="false" afterPath="$PROJECT_DIR$/reset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/window_refresh.py" beforeDir="false" afterPath="$PROJECT_DIR$/window_refresh.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,70 +212,7 @@
       <option name="project" value="LOCAL" />
       <updated>1717110610740</updated>
     </task>
-    <task id="LOCAL-00021" summary="added colors module to organize colors">
-      <created>1718230206001</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1718230206001</updated>
-    </task>
-    <task id="LOCAL-00022" summary="deleted a time variable that was not being used">
-      <created>1718230570547</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1718230570547</updated>
-    </task>
-    <task id="LOCAL-00023" summary="made a triangle enemy that follows me">
-      <created>1718917194052</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1718917194052</updated>
-    </task>
-    <task id="LOCAL-00024" summary="made enemy and triangle classes seperate using inheritance">
-      <created>1719336189247</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1719336189247</updated>
-    </task>
-    <task id="LOCAL-00025" summary="made semi working combat system">
-      <created>1719341663211</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1719341663211</updated>
-    </task>
-    <task id="LOCAL-00026" summary="optimized the combat system. allowed for easy adding of enemies and level design">
-      <created>1719625300337</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1719625300337</updated>
-    </task>
-    <task id="LOCAL-00027" summary="optimized the combat system. allowed for easy adding of enemies and level design">
-      <created>1719645649422</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1719645649422</updated>
-    </task>
-    <task id="LOCAL-00028" summary="made a death system">
-      <created>1719970771456</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1719970771456</updated>
-    </task>
-    <task id="LOCAL-00029" summary="enemies have tick speed for attacking">
-      <created>1720120662558</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1720120662558</updated>
-    </task>
-    <option name="localTasksCounter" value="30" />
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -300,14 +233,6 @@
     <MESSAGE value="changed movement so its better" />
     <MESSAGE value="made it so cube teleports when hits wall" />
     <MESSAGE value="made multiple &quot;levels&quot; and borders" />
-    <MESSAGE value="added colors module to organize colors" />
-    <MESSAGE value="deleted a time variable that was not being used" />
-    <MESSAGE value="made a triangle enemy that follows me" />
-    <MESSAGE value="made enemy and triangle classes seperate using inheritance" />
-    <MESSAGE value="made semi working combat system" />
-    <MESSAGE value="optimized the combat system. allowed for easy adding of enemies and level design" />
-    <MESSAGE value="made a death system" />
-    <MESSAGE value="enemies have tick speed for attacking" />
-    <option name="LAST_COMMIT_MESSAGE" value="enemies have tick speed for attacking" />
+    <option name="LAST_COMMIT_MESSAGE" value="made multiple &quot;levels&quot; and borders" />
   </component>
 </project>

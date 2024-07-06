@@ -9,14 +9,7 @@ triangle_color = colors.red
 enemies_list = []
 class Enemy:   # class of an enemy
 
-    def __init__(self, AC, health, speed, weapon_damage, range, tick_speed: int, color, position: list):     # innit method gives the instance of an enemy armor class and health
-        self.AC = AC
-        self.health = health
-        self.speed = speed
-        self.damage = weapon_damage
-        self.range = range
-        self.tick_speed = tick_speed
-        self.color = color
+    def __init__(self, position: list):     # innit method gives the instance of an enemy armor class and health
         self.position = position
         self.alive = True
         self.count = 1
@@ -40,10 +33,13 @@ class Enemy:   # class of an enemy
 
 
 class Triangle(Enemy):
-
-
-
-
+    damage = 1
+    AC = 10
+    health = 10
+    speed = 1
+    range = 150
+    tick_speed = 5
+    color = colors.red
     def draw(self, size):
         draw_shape.draw_triangle(self.color, self.position, size)
 
