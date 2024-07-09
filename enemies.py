@@ -7,9 +7,11 @@ import player
 triangle_tick_speed = 5
 triangle_color = colors.red
 enemies_list = []
+
+
 class Enemy:   # class of an enemy
 
-    def __init__(self, position: list):     # innit method gives the instance of an enemy armor class and health
+    def __init__(self, position):     # innit method gives the instance of an enemy armor class and health
         self.position = position
         self.alive = True
         self.count = 1
@@ -49,3 +51,5 @@ class Triangle(Enemy):
             self.count = 1
         else:
             self.count -= 1
+
+

@@ -8,6 +8,8 @@ import window_refresh
 import menu_nav
 import player
 import reset
+import draw_shape
+import colors
 
 
 def main():    # the main function that draws the window and allows for functionality

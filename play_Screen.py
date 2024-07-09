@@ -1,11 +1,12 @@
 import boolean
+import draw_shape
 import enemies
 import window
 import random
 import colors
 levels = [colors.black, colors.white, colors.red, colors.green, colors.blue, colors.yellow, colors.cyan, colors.magenta, colors.gray]
 number = 0
-random.shuffle(levels)
+#random.shuffle(levels)
 
 
 def Draw_Play_Screen(num):
