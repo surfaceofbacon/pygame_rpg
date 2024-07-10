@@ -22,6 +22,10 @@ def generate_level(num):
         triangle_enemy2 = enemies.Triangle([500, 500])
         enemies.enemies_list.append(triangle_enemy1)
         enemies.enemies_list.append(triangle_enemy2)
+
+    elif levels[num] == colors.white:
+        pentagon_enemy = enemies.Pentagon([100, 100])
+        enemies.enemies_list.append(pentagon_enemy)
     boolean.generated = True
 
 

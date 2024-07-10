@@ -6,6 +6,7 @@ import draw_shape
 import player
 triangle_tick_speed = 5
 triangle_color = colors.red
+pentagon_color = colors.green
 enemies_list = []
 
 
@@ -41,7 +42,9 @@ class Triangle(Enemy):
     speed = 1
     range = 150
     tick_speed = 5
+    tick = 0
     color = colors.red
+
     def draw(self, size):
         draw_shape.draw_triangle(self.color, self.position, size)
 
@@ -52,4 +55,22 @@ class Triangle(Enemy):
         else:
             self.count -= 1
 
+class Pentagon(Enemy):
+    damage = 5
+    AC = 15
+    health = 20
+    speed = 0.5
+    range = 150
+    tick_speed = 200
+    tick = 0
+    color = colors.green
 
+    def draw(self, size):
+        draw_shape.draw_pentagon(self.color, self.position, size)
+
+    def check_color(self):
+        if self.count <= 0:
+            self.color = pentagon_color
+            self.count = 1
+        else:
+            self.count -= 1

@@ -21,3 +21,7 @@ def draw_pentagon(color, start, size):
     dimension = vert_1, vert_2, vert_3, vert_4, vert_5
     pygame.draw.polygon(window.window, color, dimension)
 
+
+
+
+

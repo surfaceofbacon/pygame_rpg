@@ -1,5 +1,4 @@
 import pygame
-
 import actions
 import attack
 import boolean

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03b1d67c-7b48-4eb7-b29f-4369a6bca12c" name="Changes" comment="entities change color when damage is taken">
+    <list default="true" id="03b1d67c-7b48-4eb7-b29f-4369a6bca12c" name="Changes" comment="made a draw pentagon function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/draw_shape.py" beforeDir="false" afterPath="$PROJECT_DIR$/draw_shape.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/enemies.py" beforeDir="false" afterPath="$PROJECT_DIR$/enemies.py" afterDir="false" />
@@ -276,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1720120662558</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="made a draw pentagon function">
+      <created>1720498174673</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1720498174674</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -305,6 +312,7 @@
     <MESSAGE value="optimized the combat system. allowed for easy adding of enemies and level design" />
     <MESSAGE value="made a death system" />
     <MESSAGE value="enemies have tick speed for attacking" />
-    <option name="LAST_COMMIT_MESSAGE" value="enemies have tick speed for attacking" />
+    <MESSAGE value="made a draw pentagon function" />
+    <option name="LAST_COMMIT_MESSAGE" value="made a draw pentagon function" />
   </component>
 </project>

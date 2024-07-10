@@ -21,7 +21,6 @@ def menu_nav(events):
         elif start_menu.play_rect.collidepoint(pos) and boolean.start:
             boolean.play = True
             boolean.start = False
-            print('play')
         elif start_menu.settings_rect.collidepoint(pos) and boolean.start:
             boolean.settings = True
             boolean.start = False

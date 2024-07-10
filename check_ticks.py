@@ -2,10 +2,10 @@ import enemies
 
 
 def check(enemy):
-    if enemy.tick_speed <= 0:
+    if enemy.tick <= 0:
         enemy.attack()
-        enemy.tick_speed = enemies.triangle_tick_speed
+        enemy.tick = enemy.tick_speed
     else:
-        enemy.tick_speed -= 1
+        enemy.tick -= 1
 
 
