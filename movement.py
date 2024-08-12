@@ -39,5 +39,4 @@ def move_cube(x, y, keys):
     if keys[pygame.K_ESCAPE]:
         boolean.play = False
         boolean.bool_pause = True
-def move(player_postion, enemy):
-    enemy.move(player_postion, enemy.position)
+

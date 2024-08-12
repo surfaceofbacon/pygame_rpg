@@ -1,8 +1,8 @@
 import boolean
-import draw_shape
+import weapons
 import enemies
 import window
-import random
+import player
 import colors
 levels = [colors.black, colors.white, colors.red, colors.green, colors.blue, colors.yellow, colors.cyan, colors.magenta, colors.gray]
 number = 0
@@ -26,6 +26,10 @@ def generate_level(num):
     elif levels[num] == colors.white:
         pentagon_enemy = enemies.Pentagon([100, 100])
         enemies.enemies_list.append(pentagon_enemy)
+
+    elif levels[num] == colors.red:
+        hexagon_enemy = enemies.Hexagon([500, 500])
+        enemies.enemies_list.append(hexagon_enemy)
     boolean.generated = True
 
 

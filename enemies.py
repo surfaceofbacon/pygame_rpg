@@ -4,9 +4,12 @@ import math
 import colors
 import draw_shape
 import player
+import weapons
+
 triangle_tick_speed = 5
 triangle_color = colors.red
 pentagon_color = colors.green
+hexagon_color = colors.blue
 enemies_list = []
 
 
@@ -25,7 +28,7 @@ class Enemy:   # class of an enemy
     def kill(self):
         self.alive = False
 
-    def move(self, current_player_position: tuple, current_enemy_position: tuple):
+    def move_enemy(self, current_player_position: list, current_enemy_position: list):
         x_distance = (current_enemy_position[0] - current_player_position[0])
         y_distance = (current_enemy_position[1] - current_player_position[1])
         angle = math.atan(y_distance/x_distance)
@@ -33,6 +36,7 @@ class Enemy:   # class of an enemy
             angle += math.pi
         self.position[0] += self.speed * math.cos(angle)
         self.position[1] += self.speed * math.sin(angle)
+
 
 
 class Triangle(Enemy):
@@ -74,3 +78,25 @@ class Pentagon(Enemy):
             self.count = 1
         else:
             self.count -= 1
+
+
+class Hexagon(Enemy):
+    damage = 6
+    AC = 5
+    health = 10
+    speed = 5
+    range = 500
+    color = colors.black
+    tick_speed = 100
+    tick = 100
+
+    def draw(self, size):
+        draw_shape.draw_hexagon(self.color, self.position, size)
+
+    def check_color(self):
+        if self.count <= 0:
+            self.color = hexagon_color
+            self.count = 1
+        else:
+            self.count -= 1
+

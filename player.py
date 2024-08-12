@@ -23,6 +23,7 @@ class player:
         self.health = health
         self.color = color
         self.count = 5
+
     def attack(self, weapon, enemy):       # attack method gives the ability to attack enemies
         attack.attack(weapon, enemy)
 

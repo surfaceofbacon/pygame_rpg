@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03b1d67c-7b48-4eb7-b29f-4369a6bca12c" name="Changes" comment="made a draw pentagon function">
+    <list default="true" id="03b1d67c-7b48-4eb7-b29f-4369a6bca12c" name="Changes" comment="made a pentagon enemy, also fixed an issue witht he tick speed where it only worked for triangles, now it works generally">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check_ticks.py" beforeDir="false" afterPath="$PROJECT_DIR$/check_ticks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/draw_shape.py" beforeDir="false" afterPath="$PROJECT_DIR$/draw_shape.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/enemies.py" beforeDir="false" afterPath="$PROJECT_DIR$/enemies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movement.py" beforeDir="false" afterPath="$PROJECT_DIR$/movement.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/play_Screen.py" beforeDir="false" afterPath="$PROJECT_DIR$/play_Screen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weapons.py" beforeDir="false" afterPath="$PROJECT_DIR$/weapons.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/window_refresh.py" beforeDir="false" afterPath="$PROJECT_DIR$/window_refresh.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +42,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/PythonProjects/helloWorld.py&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rcind/PycharmProjects/Grocery_List&quot;
   }
 }</component>
   <component name="RunManager">
@@ -283,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1720498174674</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="made a pentagon enemy, also fixed an issue witht he tick speed where it only worked for triangles, now it works generally">
+      <created>1720633662401</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1720633662401</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -313,6 +324,7 @@
     <MESSAGE value="made a death system" />
     <MESSAGE value="enemies have tick speed for attacking" />
     <MESSAGE value="made a draw pentagon function" />
-    <option name="LAST_COMMIT_MESSAGE" value="made a draw pentagon function" />
+    <MESSAGE value="made a pentagon enemy, also fixed an issue witht he tick speed where it only worked for triangles, now it works generally" />
+    <option name="LAST_COMMIT_MESSAGE" value="made a pentagon enemy, also fixed an issue witht he tick speed where it only worked for triangles, now it works generally" />
   </component>
 </project>

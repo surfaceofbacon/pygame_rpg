@@ -3,6 +3,7 @@ import actions
 import movement
 import player
 import reset
+import weapons
 import window
 import start_menu
 import settings_menu
@@ -26,7 +27,11 @@ def refresh(hero):
         for enemy in enemies.enemies_list:
             enemy.draw(10)
             enemy.check_color()
-            movement.move(player_position, enemy)
+            #enemy.move_enemy(player_position, enemy.position)
+        for bullet in weapons.bullets:
+
+            bullet.draw()
+            bullet.move_bullet()
         if hero.health <= 0:
             reset.game_reset()
     if boolean.settings:
