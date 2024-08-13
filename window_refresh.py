@@ -27,7 +27,7 @@ def refresh(hero):
         for enemy in enemies.enemies_list:
             enemy.draw(10)
             enemy.check_color()
-            #enemy.move_enemy(player_position, enemy.position)
+            enemy.move_enemy(player_position, enemy.position)
         for bullet in weapons.bullets:
 
             bullet.draw()

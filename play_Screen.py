@@ -27,9 +27,6 @@ def generate_level(num):
         pentagon_enemy = enemies.Pentagon([100, 100])
         enemies.enemies_list.append(pentagon_enemy)
 
-    elif levels[num] == colors.red:
-        hexagon_enemy = enemies.Hexagon([500, 500])
-        enemies.enemies_list.append(hexagon_enemy)
     boolean.generated = True
 
 
