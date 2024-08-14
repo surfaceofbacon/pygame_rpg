@@ -1,5 +1,5 @@
 import pygame
-import window
+from Main import window
 import math
 
 

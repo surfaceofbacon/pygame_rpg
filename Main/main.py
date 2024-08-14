@@ -1,14 +1,10 @@
 import pygame
-import actions
-import attack
+from Actions import actions
 import boolean
-import enemies
 import window_refresh
-import menu_nav
-import player
+from Menu import menu_nav
+from Entities import player
 import reset
-import draw_shape
-import colors
 
 
 def main():    # the main function that draws the window and allows for functionality

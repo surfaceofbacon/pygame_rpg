@@ -1,9 +1,6 @@
-import boolean
-import weapons
-import enemies
-import window
-import player
-import colors
+from Entities import enemies
+from Main import window, boolean, colors
+
 levels = [colors.black, colors.white, colors.red, colors.green, colors.blue, colors.yellow, colors.cyan, colors.magenta, colors.gray]
 number = 0
 #random.shuffle(levels)

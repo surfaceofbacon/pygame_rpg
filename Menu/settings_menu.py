@@ -1,7 +1,6 @@
-import Draw_text
-import window
+from Menu import Draw_text
+from Main import window, colors
 import pygame
-import colors
 
 font = pygame.font.SysFont('Arialblack', 40)
 back_rect = pygame.Rect(480, 380, 90, 50)

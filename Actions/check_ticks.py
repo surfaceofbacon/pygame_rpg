@@ -1,5 +1,4 @@
-import enemies
-import weapons
+from Entities import enemies, weapons
 
 
 def check(enemy):

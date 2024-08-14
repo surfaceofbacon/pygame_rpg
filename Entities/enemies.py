@@ -1,10 +1,8 @@
-import attack   # imports the attack module to apply that to enemies
 import math
 
-import colors
-import draw_shape
+from Main import colors
+from Actions import draw_shape
 import player
-import weapons
 
 triangle_tick_speed = 5
 triangle_color = colors.red

@@ -1,9 +1,8 @@
-import attack
+from Actions import attack
 import pygame
 
-import boolean
-import window
-import colors
+from Main import window, boolean, colors
+
 speed = 15
 cube_x = 700
 cube_y = 400

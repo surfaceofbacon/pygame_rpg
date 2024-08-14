@@ -1,7 +1,7 @@
 import pygame
-import colors
-import window
-import Draw_text
+from Main import window, colors
+from Menu import Draw_text
+
 font = pygame.font.SysFont('Arialblack', 40)
 play_rect = pygame.Rect(500, 200, 90, 50)
 settings_rect = pygame.Rect(500, 280, 200, 50)

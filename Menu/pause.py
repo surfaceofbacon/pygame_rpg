@@ -1,7 +1,7 @@
-import window
+from Main import window, colors
 import pygame
-import Draw_text
-import colors
+from Menu import Draw_text
+
 font = pygame.font.SysFont('Arialblack', 40)
 resume_rect = pygame.Rect(500, 200, 175, 50)
 settings_rect = pygame.Rect(500, 280, 200, 50)
@@ -13,4 +13,4 @@ def draw_pause_screen():
 
     Draw_text.draw_text('Settings', font, colors.black, 500, 280)
 
-    Draw_text.draw_text('Quit',font , colors.black, 500, 360)
+    Draw_text.draw_text('Quit', font, colors.black, 500, 360)

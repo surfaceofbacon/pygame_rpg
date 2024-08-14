@@ -1,12 +1,10 @@
 import pygame
 
-import reset
 import start_menu
 import settings_menu
 import pause
-import boolean
-import player
-import colors
+from Main import boolean, colors, reset
+from Entities import player
 
 
 def menu_nav(events):

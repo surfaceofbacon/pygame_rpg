@@ -1,6 +1,7 @@
 import dice
-import enemies
-import colors
+from Entities import enemies
+from Main import colors
+
 
 def attack(weapon, enemy):        # defines the function for attacking
     range_cap = 100 // weapon.crit_chance    # so we can calculate the chance of getting a crit hit with critCalc

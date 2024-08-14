@@ -1,16 +1,10 @@
 import pygame
-import actions
-import movement
-import player
 import reset
-import weapons
-import window
-import start_menu
-import settings_menu
-import play_Screen
-import pause
+from Main import window
+from Menu import pause, play_Screen, settings_menu, start_menu
 import boolean
-import enemies
+from Entities import enemies, player, weapons, movement
+
 
 def refresh(hero):
     if boolean.start:

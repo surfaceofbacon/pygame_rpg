@@ -1,12 +1,9 @@
-import enemies
-import settings_menu
-import colors
-import boolean
-import play_Screen
+from Entities import enemies, player
+from Main import boolean, colors
+from Menu import play_Screen, settings_menu
 import random
-import player
-import start_menu
-import pygame
+
+
 def reset():
     settings_menu.blue_color = colors.blue
     settings_menu.red_color = colors.red

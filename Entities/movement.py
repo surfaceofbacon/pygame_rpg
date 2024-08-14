@@ -1,12 +1,9 @@
 import pygame
 
-import attack
-import boolean
-import player
-import window
-import play_Screen
-import enemies
-import weapons
+from Entities import player
+from Main import window, boolean
+from Menu import play_Screen
+
 
 def move_cube(x, y, keys):
     if x > window.size[0] - player.cube_width:

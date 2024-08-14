@@ -1,8 +1,7 @@
 import pygame
 import weapons
-import player
-import window
-import colors
+from Entities import player
+from Main import window, colors
 import math
 bullets = []
 bullet_position = []
