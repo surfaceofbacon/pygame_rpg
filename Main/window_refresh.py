@@ -1,8 +1,7 @@
 import pygame
-import reset
+from Main import reset, boolean
 from Main import window
 from Menu import pause, play_Screen, settings_menu, start_menu
-import boolean
 from Entities import enemies, player, weapons, movement
 
 

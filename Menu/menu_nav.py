@@ -1,8 +1,6 @@
 import pygame
 
-import start_menu
-import settings_menu
-import pause
+from Menu import start_menu, settings_menu, pause
 from Main import boolean, colors, reset
 from Entities import player
 

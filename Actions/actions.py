@@ -1,8 +1,7 @@
 import pygame
 import math
-import attack
+from Actions import attack, check_ticks
 from Entities import enemies, weapons
-import check_ticks
 
 def check_actions_hero(event, player_position: tuple):
     for enemy in enemies.enemies_list:

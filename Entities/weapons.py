@@ -1,5 +1,4 @@
 import pygame
-import weapons
 from Entities import player
 from Main import window, colors
 import math

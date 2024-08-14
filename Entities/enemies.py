@@ -2,7 +2,7 @@ import math
 
 from Main import colors
 from Actions import draw_shape
-import player
+from Entities import player
 
 triangle_tick_speed = 5
 triangle_color = colors.red

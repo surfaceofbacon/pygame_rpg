@@ -1,4 +1,4 @@
-import dice
+from Actions import dice
 from Entities import enemies
 from Main import colors
 

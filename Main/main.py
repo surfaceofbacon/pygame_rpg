@@ -1,10 +1,8 @@
 import pygame
 from Actions import actions
-import boolean
-import window_refresh
 from Menu import menu_nav
 from Entities import player
-import reset
+from Main import reset, window_refresh, boolean
 
 
 def main():    # the main function that draws the window and allows for functionality
