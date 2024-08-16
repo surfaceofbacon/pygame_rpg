@@ -16,4 +16,4 @@ def draw_pause_screen():
 
     Draw_text.draw_text('Quit', font, colors.black, 500, 360)
 
-    Draw_text.draw_text(f'pass')
+    Draw_text.draw_text(f'{player.hero.weapon}', font, colors.black, 250, 280)

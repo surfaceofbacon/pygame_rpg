@@ -29,6 +29,4 @@ def attack(weapon, enemy):        # defines the function for attacking
         enemies.enemies_list.remove(enemy)
         player.hero.xp += 1
         player.hero.check_xp()
-        print(player.hero.weapon)
-        print(player.hero.xp)
 
