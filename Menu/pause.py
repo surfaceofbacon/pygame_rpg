@@ -1,5 +1,6 @@
 from Main import window, colors
 import pygame
+from Entities import player
 from Menu import Draw_text
 
 font = pygame.font.SysFont('Arialblack', 40)
@@ -14,3 +15,5 @@ def draw_pause_screen():
     Draw_text.draw_text('Settings', font, colors.black, 500, 280)
 
     Draw_text.draw_text('Quit', font, colors.black, 500, 360)
+
+    Draw_text.draw_text(f'pass')

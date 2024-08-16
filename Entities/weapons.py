@@ -4,17 +4,21 @@ from Main import window, colors
 import math
 bullets = []
 bullet_position = []
+sword_range = 150
 class Weapon:    # creates weapon class
 
-    def __init__(self, modifier, damage, crit_chance, range):  # assigns modifier, damage, and crit_chance to
+    def __init__(self, name, modifier, damage, crit_chance, range):  # assigns modifier, damage, and crit_chance to
         # the instance of a weapon
+        self.name = name
         self.modifier = modifier
         self.damage = damage
         self.crit_chance = crit_chance
         self.range = range
 
+    def __str__(self):
+        return self.name
 
-iron_sword = Weapon(3, 5, 3, 150)    # creates an instance of a weapon and assigns it to a iron sword
+
 
 
 class Bullet:
@@ -40,5 +44,11 @@ class Bullet:
 
 def spawn_bullet(enemy):
     bullet_position.append(enemy.position)
-    bullet = weapons.Bullet((player.cube_x, player.cube_y))
-    weapons.bullets.append(bullet)
+    bullet = Bullet((player.cube_x, player.cube_y))
+    bullets.append(bullet)
+
+
+stone_sword = Weapon('stone sword', 1, 3, 0, sword_range)
+iron_sword = Weapon('iron sword', 3, 5, 3, sword_range)    # creates an instance of a weapon and assigns it to a iron sword
+
+weapon_list = [stone_sword, iron_sword]

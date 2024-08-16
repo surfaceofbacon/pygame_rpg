@@ -1,6 +1,7 @@
 from Actions import dice
-from Entities import enemies
+from Entities import enemies, player
 from Main import colors
+
 
 
 def attack(weapon, enemy):        # defines the function for attacking
@@ -26,4 +27,8 @@ def attack(weapon, enemy):        # defines the function for attacking
         print('you missed')
     if enemy.health <= 0:
         enemies.enemies_list.remove(enemy)
+        player.hero.xp += 1
+        player.hero.check_xp()
+        print(player.hero.weapon)
+        print(player.hero.xp)
 
